@@ -1,0 +1,6 @@
+version: "2.3"
+services:
+  postfix:
+    image: jouve/postfix:3.3.0-1
+  postfix-log:
+    image: jouve/syslog-ng

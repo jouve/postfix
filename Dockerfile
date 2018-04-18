@@ -9,5 +9,7 @@ COPY syslog-ng.conf /etc/syslog-ng/
 
 COPY sv /etc/sv
 
+EXPOSE 25
+
 CMD [ "runsvdir", "/etc/sv" ]
 

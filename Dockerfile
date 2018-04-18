@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 RUN apk add --no-cache runit postfix syslog-ng
 
-RUN sed -i -e 's/#mynetworks_style = subnet/mynetworks_style = subnet/' main.cf && \
+RUN sed -i -e 's/#mynetworks_style = subnet/mynetworks_style = subnet/' /etc/postfix/main.cf && \
     newaliases
 
 COPY syslog-ng.conf /etc/syslog-ng/

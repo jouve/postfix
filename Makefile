@@ -1,4 +1,4 @@
-VERSION=3.2.4-3
+VERSION=3.2.4-4
 
 build:
 	docker build . -t jouve/postfix:$(VERSION)

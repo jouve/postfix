@@ -1,2 +1,2 @@
 #!/bin/sh
-exec /usr/lib/postfix/master
+exec postfix start-fg

@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.8
 
 RUN apk add --no-cache postfix runit socklog && \
     rm -rf /etc/sv/socklog-unix /var/log/socklog
@@ -11,4 +11,3 @@ COPY sv /etc/sv
 EXPOSE 25
 
 CMD [ "runsvdir", "/etc/sv" ]
-

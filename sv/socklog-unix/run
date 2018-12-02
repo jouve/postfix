@@ -1,2 +1,0 @@
-#!/bin/sh
-exec chpst -Unobody socklog unix /dev/log

@@ -1,7 +1,6 @@
 FROM alpine:3.8
 
-RUN apk add --no-cache postfix runit socklog && \
-    rm -rf /etc/sv/socklog-unix /var/log/socklog
+RUN apk add --no-cache postfix runit
 
 RUN sed -i -e 's/#mynetworks_style = subnet/mynetworks_style = subnet/' /etc/postfix/main.cf && \
     newaliases

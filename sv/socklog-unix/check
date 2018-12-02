@@ -1,2 +1,0 @@
-#!/bin/sh
-exec socklog-check unix /dev/log
